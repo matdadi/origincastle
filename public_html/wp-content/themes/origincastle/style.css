@@ -1,0 +1,121 @@
+/*
+Theme Name: Origin castle book
+Theme URI: https://wordpress.org/themes/twentytwentyfour/
+Author: Dadi
+Description: Twenty Twenty-Four is designed to be simple, flexible, and applicable to bookstore website.
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: origincastlebookstore
+Tags: one-column
+*/
+:root {
+    /* color variable*/
+    --primary-color: #742536;
+    --primary-background: #F7F3E3;
+    --secondary-background: #8A8D8F;
+    --neutral-color: #F7F3E3;
+    --success-color: #51614D;
+    --alert-color: #C9B461;
+    --info-color: #253A4A;
+
+    /* size variable */
+    --size-s: 8px;
+    --size-m: 24px;
+    --size-l: 32px;
+    --size-xl: 48px;
+
+    /* space variable */
+    --space-s: 8px;
+    --space-m: 24px;
+    --space-l: 32px;
+    --space-xl: 48px;
+
+    /* font size variable */
+    --font-size-h1: 2rem;
+    --font-size-h2: 1.8rem;
+    --font-size-h3: 1.4rem;
+    --font-size-h4: 1rem;
+    --font-size-h5: 0.8rem;
+    --font-size-h6: 0.6rem;
+}
+/* display */
+.display-flex {
+    display: flex;
+    flex: 1;
+}
+.display-inline-block {
+    display: inline-block;
+}
+/* flex-direction */
+.flex-direction-row {
+    flex-direction: row;
+}
+.flex-direction-colum {
+    flex-direction: column;
+}
+/* align-content */
+.align-content-start {
+    align-content: start;
+}
+.align-content-center {
+    align-content: center;
+}
+.align-content-end {
+    align-content: end;
+}
+.align-content-space-around {
+    align-content: space-around;
+}
+.align-content-space-between {
+    align-content: space-between;
+}
+.align-content-space-evenly {
+    align-content: space-evenly;
+}
+/* header */
+html {
+    font-size: 18px;
+}
+.page {
+    background-color: var(--secondary-background);
+    display: flex;
+}
+.menu {
+    background-color: var(--primary-color);
+    color: var(--neutral-color);
+    display: flex;
+    border-radius: var(--size-xl);
+}
+.title {
+    font-size: var(--font-size-h3);
+    font-weight: 600; /*semi-bold*/
+    color: var(--neutral-color);
+}
+.navigation {
+    color: var(--neutral-color);
+}
+/* desktop */
+/* header */
+@media (min-width: 1024px) {
+header {
+    justify-items: center;
+}
+.page {
+    padding: var(--space-xl) var(--space-m);
+    flex-direction: column;
+    row-gap: var(--space-s);
+}
+.menu {
+    padding: var(--space-m) var(--space-s);
+    flex-direction: row;
+    column-gap: var(--space-m);
+    justify-content: center;
+    width: fit-content;
+}
+.title {
+    display: flex;
+    flex-direction: row;
+    column-gap: var(--size-s);
+}   
+}
